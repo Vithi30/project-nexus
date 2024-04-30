@@ -52,7 +52,7 @@ function myMenuFunction() {
     const PasswordVal=Password.value.trim();
 
    if(FirstnameVal===''){
-    setError(Firstname,'firstname is required')
+    setError(Firstname,'Firstname is required')
 
    }
    else{
@@ -71,17 +71,17 @@ function myMenuFunction() {
     setError(Email,'Email is required')
    }
    else if (!validateEmail(EmailVal)){
-    setError(Email,'enter a correct mail id')
+    setError(Email,'Enter your correct mail id')
    }
    else{
     setSuccess(Email)
    }
 
    if(PasswordVal===''){
-    setError(Password,'enter password')
+    setError(Password,'Enter password')
    }
    else if (PasswordVal.length<8){
-    setError(Password,'Pasword must be in * characters')
+    setError(Password,'Pasword must be in 8 * characters')
    }
    else{
     setSuccess(Password)
